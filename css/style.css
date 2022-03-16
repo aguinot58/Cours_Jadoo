@@ -49,15 +49,16 @@ header{
     padding: 20px 0 20px 0;
     width: 100%;
     height: 35px;
-    white-space: nowrap;
     z-index: 10;
+    display: flex;
 }
 
 .logo{
     display:inline-block;
-    margin-left: 150px;
+    margin-left: 10%;
     vertical-align: middle;
     height: 100%;
+    white-space: nowrap;
 }
 
 .logo img{
@@ -69,34 +70,95 @@ header{
 }
 
 header nav{
-    float: right;
-    margin-right: 125px;
-    height: 100%;
+    width: 40%;
+    position: relative;
+    margin: 0 0 0 35%;
 }
 
-header nav ul{
-    display: table;
-    height: 100%;
-    border-spacing: 30px 0;
-    vertical-align: middle;
-    padding: 0px;
-    margin: 0px;
+.menu-burger, #toggle{
+    display: none;
 }
 
-header nav ul li{
-    display:table-cell;
-    vertical-align: middle;
+header nav .nav-burger{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
 }
 
-header nav ul li a{
+header nav .nav-burger a{
     text-decoration: none;
     font-size: 20px;
     color:black;
 }
 
-header nav ul li a:hover{
+header nav .nav-burger a:hover{
     text-decoration: underline;
 }
+
+@media all and (max-width: 1324px) {
+    header nav .nav-burger{
+        display: none;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    header nav .nav-burger a{
+        width: 50%;
+    }
+
+    header nav .menu-burger{
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0 0 60%;
+    }
+
+    header nav .nav-burger a{
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    #toggle:checked + .nav-burger {
+        display: flex;
+    }
+    
+}
+
+@media all and (max-width: 1024px) {
+    header nav .nav-burger{
+        display: none;
+        flex-direction: column;
+    }
+
+    header nav .nav-burger a{
+        width: 60%;
+    }
+
+    header nav .menu-burger{
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0 0 40%;
+    }
+
+    header nav .nav-burger a{
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    #toggle:checked + .nav-burger {
+        display: flex;
+    }
+    
+}
+
+
+
 /* fin header */
 
 /* Titres */
@@ -158,7 +220,7 @@ section article h5{
 /* section 1 - présentation */
 #section1{
     background: url("../img/illustration_principale.jpg") no-repeat;
-    background-size: 120%;
+    background-size: 100%;
 }
 
 .dessin-trait-rose {
