@@ -717,6 +717,10 @@ h4{
         flex-direction: row;
     }
 
+    #section2 .nouveautes2 article figure figcaption{
+        margin: 10px 0 0 5px;
+    }
+
     #section2 .nouveautes2 figure img[class="plat2"]{
         width: 115px;
         height: 12
@@ -869,57 +873,89 @@ h4{
         margin: -5px 0 0 0;
     }
 
-
-
 }
 /* fin Section 3 */
 
 /* Section 4 */
-#section4{
-    height: 1100px;
-    padding: 50px 0 0 0;
-    background: url("../img/illustration_commander.jpg") no-repeat;
-    background-size: cover;
+@media all and (min-width:657px) and (max-width:2000px){
+
+    #section4{
+        height: 1100px;
+        padding: 50px 0 0 0;
+        background: url("../img/illustration_commander.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    #section4 .commande{
+        margin: 400px 0 0 150px;
+    }
+
+    #section4 .commande h2{
+        margin: -10px 0 0 0;
+        width: 385px;
+    }
+
+    #section4 article{
+        margin: 50px 0 0 150px;
+    }
+
+    #section4 article a{
+        text-decoration: none;
+    }
+
+    #section4 article figure{
+        display: block;
+        margin: 0 0 0 0;
+    }
+
+    #section4 article a img, #section4 .livraison figure img{
+        float: left;
+        height: 65px;
+        width: 65px;
+    }
+
+    #section4 article a p, #section4 .livraison p{
+        margin: 5px 0 0 100px;
+    }
+
+    #section4 .livraison figcaption{
+        height:68px;
+        padding-top: 5px;
+    }
+
+    #section4 .bouton-carte{
+        margin: 50px 0 0 150px;
+    }
 }
 
-#section4 .commande{
-    margin: 400px 0 0 150px;
-}
+@media all and (max-width:656px){
 
-#section4 .commande h2{
-    margin: -10px 0 0 0;
-}
+    #section4{
+        background-color: white;
+        margin: 50px 0 0 0; padding: 0;
+        max-width: 565px;
+    }
 
-#section4 article{
-    margin: 50px 0 0 150px;
-}
+    #section4 .commande{
+        text-align: center;
+    }
 
-#section4 article a{
-    text-decoration: none;
-}
+    #section4 .commande h4{
+        font-family: poppins-regular;
+        font-size: 18px;
+        color: rgb(94, 98, 130);
+    }
 
-#section4 article figure{
-    display: block;
-    margin: 0 0 0 0;
-}
+    #section4 .commande h2{
+        margin: -15px 0 0 25px;
+        font-size: 40px;
+        font-family: volkhov-bold-400;
+        color: rgb(20, 24, 62);
+        width: 425px;
+    }
 
-#section4 article a img, #section4 .livraison figure img{
-    float: left;
-    height: 65px;
-    width: 65px;
-}
 
-#section4 article a p, #section4 .livraison p{
-    margin: 5px 0 0 100px;
-}
 
-#section4 .livraison figcaption{
-    height:68px;
-    padding-top: 5px;
-}
-
-#section4 .bouton-carte{
-    margin: 50px 0 0 150px;
 }
 /* fin Section 4 */
 
