@@ -113,6 +113,32 @@ header{
     margin-right: 20px;
 }
 
+.logo img:first-child:hover{
+    animation: logo-animation 0.5s ease-in;
+}
+
+@keyframes logo-animation {
+    20% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
 header nav{
     width: 30%;
     position: relative;
@@ -188,6 +214,35 @@ header nav .nav-burger a:hover{
         justify-content: center;
         align-items: center;
         margin: 5px 0 0 40%;
+    }
+
+    header nav .nav-burger a{
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    #toggle:checked + .nav-burger {
+        display: flex;
+    }
+}
+
+@media all and (max-width: 656px) {
+    header nav .nav-burger{
+        display: none;
+        flex-direction: column;
+    }
+
+    header nav .nav-burger a{
+        width: 60%;
+    }
+
+    header nav .menu-burger{
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0 0 0;
     }
 
     header nav .nav-burger a{
@@ -296,7 +351,7 @@ h4{
 @media all and (max-width:656px){
 
     #section1{
-        height: 600px;
+        height: 565px;
     }
 
     #section1{
@@ -346,6 +401,7 @@ h4{
         font-size: 16px;
         text-align: center;
         margin-top: 0px;
+        width: 425px;
     }
 
     .dessin-trait-rose {
@@ -362,14 +418,31 @@ h4{
 /* fin section 1 */
 
 /* Section 2 - nouveautés */
-@media (max-width:2000px){
+@media all and (min-width:657px) and (max-width:2000px){
     #decor1{
         float: right;
+        margin: 0 25px 0 0;
     }
 
     #section2{
         padding: 25px 0 0px 75px;
         background-color: white;
+    }
+
+    #section2 h4{
+        padding : 50px 0 0 150px;
+        text-align: center;
+        font-size: 20px;
+        font-family: poppins-regular;
+        color: rgb(94, 98, 130);
+    }
+
+    #section2 h2{
+        text-align: center;
+        padding : 0 0 0 155px;
+        margin: -10px 0 50px 0;
+        font-family: volkhov-bold;
+        color: rgb(20, 24, 62);
     }
 
     .nouveautes{
@@ -380,30 +453,7 @@ h4{
         display: inline-flexbox;
     }
 
-    #section2 h4{
-        padding : 50px 0 0 150px;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    #section2 h2{
-        text-align: center;
-        padding : 0 0 0 155px;
-        margin: -10px 0 50px 0;
-    }
-
-    .decor-2{
-        content: "";
-        position: absolute;
-        width: 10%;
-        height: 100%;
-        right: 165px;
-        bottom: 60px;
-        background: url("../img/decoration_filet.svg") no-repeat;
-        background-position: 100% 80%;
-    }
-
-    #section2 .nouveautes article{
+    #section2 .nouveautes .carte-plat{
         float: left;
         height: 419px;
         margin: 0 50px 0 0;
@@ -445,6 +495,17 @@ h4{
     #section2 .nouveautes article figure figcaption p{
         text-align: center;
         padding: 15px 0 0 0;
+    }
+
+    .decor-2{
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        right: 165px;
+        bottom: 60px;
+        background: url("../img/decoration_filet.svg") no-repeat;
+        background-position: 100% 80%;
     }
 
     #section2 .nouveautes2{
@@ -522,26 +583,150 @@ h4{
     }
 }
 
-@media (max-width:656px){
+@media all and (max-width:656px){
 
     #decor1{
         display: none;
     }
 
+    #section2{
+        padding: 50px 8% 50px 8%;
+        max-width: 565px;
+        background-color: white;
+        height: 1500px;
+        margin: 0;
+    }
+
+    .titres{
+        width: 395px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0 0 0;
+    }
+
+    #section2 .titres h4{
+        padding: 0;
+        margin: 0 0 0 10px;
+        font-size: 18px;
+        font-family: poppins-regular;
+        color: rgb(94, 98, 130);
+    }
+
+    #section2 .titres h2{
+        padding: 0;
+        font-size: 40px;
+        font-family: volkhov-bold;
+        color: rgb(20, 24, 62);
+        width: 475px;
+        margin: 15px 0 35px 50px;
+    }
+
+    .decor-2{
+        display: none;
+    }
+
+    #section2 .nouveautes .plat{
+        border: 0px solid transparent;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #section2 .nouveautes .legende-plat{
+        border: 0px solid transparent;
+        border-radius: 0 0 20px 20px;
+        background-color: white;
+        width: 100%;
+        height: 90px;
+    }
+
+    #section2 .nouveautes figure, #section2 .nouveautes figure figcaption, #section2 .nouveautes figure img{
+        width: 320px;
+    }
+
+    #section2 .nouveautes article{
+        box-shadow: 10px 10px rgba(135, 135, 135,0.025), -10px -10px rgba(135, 135, 135, 0.025), -10px 10px rgba(135, 135, 135, 0.025), 10px -10px rgba(135, 135, 135, 0.025);
+    }
+
+    #section2 .nouveautes figure figcaption{
+        padding: 0 0 0 0;
+        margin: -22px 0 0 0;
+    }
+
+    #section2 .nouveautes article figure figcaption p{
+        text-align: center;
+        padding: 15px 0 0 0;
+    }
+
+    #section2 .nouveautes figure{
+        margin: 0 0 0 0;
+        float:right;
+    }
+
+    #section2 .nouveautes{
+        position: relative;
+        overflow: hidden;
+        width: 500%;
+        height: 430px;
+        margin: 0 0 50px 0px;
+        padding: 0 0 0 40px;
+        animation: slider 12s infinite
+    }
+
+    #section2 .nouveautes .carte-plat{
+        position: relative;
+        display: inline-block;
+        padding: 0;
+        margin: 0 50px 0 0;
+    }
+
+    #section2 .nouveautes .carte-plat-2{
+        margin: 0 30px 0 30px;
+    }
+
+    #section2 .nouveautes .carte-plat-3{
+        margin: 0 0 0 50px;
+    }
+
+    @keyframes slider {
+        0%, 33%, 100%	{ left: 0 }
+        35%, 66%		{ left: -100% }
+        68%, 95%		{ left: -200% }
+    }
+
+    /*#section2 .nouveautes2{
+        height: 1200px;
+        padding: 0;
+        margin: 800px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section2 .nouveautes2 article{
+        margin: 0 0 0 0;
+        width: 245px;
+    }
+
+    #section2 .nouveautes2 article figure{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #section2 .nouveautes2 figure img[class="plat2"]{
+        width: 125px;
+        height: 125px;
+    }*/
 
 
-
-
-
-
-    
 
 }
+
 /* fin section 2 */
 
 /* Section 3 */
 #section3{
-    height: 1200px;
+    height: 1300px;
     padding: 50px 0 0 0;
     background: url("../img/illustration_chef.jpg") no-repeat;
     background-size: 120%;
@@ -569,6 +754,11 @@ h4{
 
 #section3 article{
     margin: 100px 0 0 150px;
+}
+
+#section3 article h1{
+    font-size: 80px;
+    color: white;
 }
 
 #section3 article h1, #section3 article p{
