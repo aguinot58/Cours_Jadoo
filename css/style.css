@@ -99,7 +99,7 @@ header{
 
 .logo{
     display:inline-block;
-    margin-left: 10%;
+    margin-left: 8%;
     vertical-align: middle;
     height: 100%;
     white-space: nowrap;
@@ -114,9 +114,9 @@ header{
 }
 
 header nav{
-    width: 40%;
+    width: 30%;
     position: relative;
-    margin: 0 0 0 35%;
+    margin: 0 0 0 46%;
 }
 
 .menu-burger, #toggle{
@@ -127,12 +127,12 @@ header nav .nav-burger{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 header nav .nav-burger a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -235,6 +235,10 @@ h4{
 
 @media (max-width:2000px){
 
+    #section1{
+        height: 800px;
+    }
+
     #section1::after{
         background: url("../img/illustration_principale.jpg") no-repeat;
         background-size: cover;
@@ -247,19 +251,22 @@ h4{
         right: 0;
         bottom: 0;
         left: -4px;
-        transform: translateZ(-1px) scale(1.5);
+        /*transform: scale(1.5);*/
         z-index: -1;
+        overflow:hidden;
     }
     
     #section1 article h3{
         font-family: poppins-bold, Verdana, serif;
         font-size: 20px;
+        margin: 15px 0 30px 0;
     }
     
     #section1 article h1{
         color: white;
         font-family: volkhov-bold, Verdana, serif;
         font-size: 85px;
+        margin: 45px 0 25px 0;
     }
     
     #section1 article h5{
@@ -267,6 +274,8 @@ h4{
         color:rgb(196, 196, 196);
         font-family: poppins-regular, Verdana, serif;
         font-size: 16px;
+        width: 475px;
+        margin: 35px 0 0 0;
     }
     
     .dessin-trait-rose {
@@ -274,13 +283,21 @@ h4{
     }
     
     #section1 .dessin-trait-rose {
-        margin: 0 0 25px;
-        background-position: 10px 100%;
+        margin: 0 0 20px;
+        background-position: 10px 95%;
+    }
+
+    .bouton-carte{
+        margin: 40px 0 0 0;
     }
 
 }
 
 @media all and (max-width:656px){
+
+    #section1{
+        height: 600px;
+    }
 
     #section1{
         padding: 50px 8% 50px 8%;
@@ -342,168 +359,183 @@ h4{
     }
 
 }
-
-
 /* fin section 1 */
 
 /* Section 2 - nouveautés */
-#decor1{
-    float: right;
+@media (max-width:2000px){
+    #decor1{
+        float: right;
+    }
+
+    #section2{
+        padding: 25px 0 0px 75px;
+        background-color: white;
+    }
+
+    .nouveautes{
+        width: 70%;
+        margin: 0 0 0 375px;
+        height: 500px;
+        position: relative;
+        display: inline-flexbox;
+    }
+
+    #section2 h4{
+        padding : 50px 0 0 150px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #section2 h2{
+        text-align: center;
+        padding : 0 0 0 155px;
+        margin: -10px 0 50px 0;
+    }
+
+    .decor-2{
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        right: 165px;
+        bottom: 60px;
+        background: url("../img/decoration_filet.svg") no-repeat;
+        background-position: 100% 80%;
+    }
+
+    #section2 .nouveautes article{
+        float: left;
+        height: 419px;
+        margin: 0 50px 0 0;
+        position: relative;
+        z-index: 5;
+    }
+
+    #section2 .nouveautes .plat{
+        border: 0px solid transparent;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #section2 .nouveautes .legende-plat{
+        border: 0px solid transparent;
+        border-radius: 0 0 20px 20px;
+        background-color: white;
+        width: 100%;
+        height: 90px;
+    }
+
+    #section2 .nouveautes figure, #section2 .nouveautes figure figcaption, #section2 .nouveautes figure img{
+        width: 320px;
+    }
+
+    #section2 .nouveautes article{
+        box-shadow: 10px 10px rgba(135, 135, 135,0.025), -10px -10px rgba(135, 135, 135, 0.025), -10px 10px rgba(135, 135, 135, 0.025), 10px -10px rgba(135, 135, 135, 0.025);
+    }
+
+    #section2 .nouveautes figure{
+        margin: 0 0 0 0;
+        float:right;
+    }
+
+    #section2 .nouveautes figure figcaption{
+        padding: 0 0 0 0;
+        margin: -22px 0 0 0;
+    }
+
+    #section2 .nouveautes article figure figcaption p{
+        text-align: center;
+        padding: 15px 0 0 0;
+    }
+
+    #section2 .nouveautes2{
+        height: 400px;
+        margin: 0 0 50px 0;
+    }
+
+    #section2 .nouveautes2 article::before {
+        content: "";
+        position: relative;
+        width: 100px;
+        height: 100px;
+        bottom: -250px;
+        left: -50px;
+        opacity: 0;
+        background: url("../img/decoration_rose.svg") no-repeat;
+        background-size: cover;
+    }
+
+    #section2 .nouveautes2 article:hover::before {
+        opacity: 1;
+        z-index: 10;
+        position: relative;
+    }
+
+    #section2 .nouveautes2 article:first-of-type{
+        margin: 0 40px 0 350px;
+    }
+
+    #section2 .nouveautes2 article:first-of-type:hover{
+        margin: 0 40px 0 350px;
+    }
+
+    #section2 .nouveautes2 article{
+        margin: 0 45px 0 0;
+        width: 245px;
+        height: 290px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        position: relative;
+        display: inline-flex;
+    }
+
+    #section2 .nouveautes2 article:hover{
+        margin: 0 45px 0 0;
+        background-color: white;
+        border: 1px solid rgba(135,135,135,0.05);
+        border-radius: 20px;
+        width: 245px;
+        height: 285px;
+        box-shadow: 15px 15px rgba(135, 135, 135,0.02), -15px -15px rgba(135, 135, 135, 0.02), 
+                    -15px 15px rgba(135, 135, 135, 0.02), 15px -15px rgba(135, 135, 135, 0.02);
+    }
+
+    #section2 .nouveautes2 figure img[class="plat2"]{
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        margin: 0 0 0 3px;
+    }
+
+    #section2 .nouveautes2 article figure figcaption p{
+        width: 100%;
+        text-align: center;
+        background-color: white;
+    }
+
+    .ingredient{
+        margin: -1px 0 0 0;
+        height: 55px;
+    }
+
+    #section2 .bouton-carte{
+        margin: -20px 0 80px 830px;
+    }
 }
 
-#section2{
-    padding: 25px 0 0px 75px;
-    background-color: white;
-}
+@media (max-width:656px){
 
-.nouveautes{
-    width: 70%;
-    margin: 0 0 0 375px;
-    height: 500px;
-    position: relative;
-    display: inline-flexbox;
-}
+    #decor1{
+        display: none;
+    }
 
-#section2 h4{
-    padding : 50px 0 0 150px;
-    text-align: center;
-    font-size: 20px;
-}
 
-#section2 h2{
-    text-align: center;
-    padding : 0 0 0 155px;
-    margin: -10px 0 50px 0;
-}
 
-.decor-2{
-    content: "";
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    right: 150px;
-    bottom: 60px;
-    background: url("../img/decoration_filet.svg") no-repeat;
-    background-position: 100% 80%;
-}
 
-#section2 .nouveautes article{
-    float: left;
-    height: 419px;
-    margin: 0 50px 0 0;
-}
 
-#section2 .nouveautes .plat{
-    border: 0px solid transparent;
-    border-radius: 20px 20px 0 0;
-}
 
-#section2 .nouveautes .legende-plat{
-    border: 0px solid transparent;
-    border-radius: 0 0 20px 20px;
-    background-color: white;
-    width: 100%;
-    height: 90px;
-}
 
-#section2 .nouveautes figure, #section2 .nouveautes figure figcaption, #section2 .nouveautes figure img{
-    width: 320px;
-}
+    
 
-#section2 .nouveautes article{
-    box-shadow: 10px 10px rgba(135, 135, 135,0.025), -10px -10px rgba(135, 135, 135, 0.025), -10px 10px rgba(135, 135, 135, 0.025), 10px -10px rgba(135, 135, 135, 0.025);
-}
-
-#section2 .nouveautes figure{
-    margin: 0 0 0 0;
-    float:right;
-}
-
-#section2 .nouveautes figure figcaption{
-    position: relative;
-    padding: 0 0 0 0;
-    margin: -22px 0 0 0;
-    z-index: 5;
-}
-
-#section2 .nouveautes article figure figcaption p{
-    text-align: center;
-    padding: 15px 0 0 0;
-}
-
-#section2 .nouveautes2{
-    height: 400px;
-    /*margin: auto;*/
-    margin: 0 0 50px 0;
-}
-
-#section2 .nouveautes2 article::before {
-    content: "";
-    position: relative;
-    width: 100px;
-    height: 100px;
-    bottom: -250px;
-    left: -50px;
-    opacity: 0;
-    background: url("../img/decoration_rose.svg") no-repeat;
-    background-size: cover;
-}
-
-#section2 .nouveautes2 article:hover::before {
-    opacity: 1;
-    z-index: 10;
-    position: relative;
-}
-
-#section2 .nouveautes2 article:first-of-type{
-    margin: 0 40px 0 350px;
-}
-
-#section2 .nouveautes2 article:first-of-type:hover{
-    margin: 0 40px 0 350px;
-}
-
-#section2 .nouveautes2 article{
-    margin: 0 45px 0 0;
-    width: 245px;
-    height: 290px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    position: relative;
-    display: inline-flex;
-}
-
-#section2 .nouveautes2 article:hover{
-    margin: 0 45px 0 0;
-    background-color: white;
-    border: 1px solid rgba(135,135,135,0.05);
-    border-radius: 20px;
-    width: 245px;
-    height: 285px;
-    box-shadow: 15px 15px rgba(135, 135, 135,0.02), -15px -15px rgba(135, 135, 135, 0.02), 
-                -15px 15px rgba(135, 135, 135, 0.02), 15px -15px rgba(135, 135, 135, 0.02);
-}
-
-#section2 .nouveautes2 figure img[class="plat2"]{
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    margin: 0 0 0 3px;
-}
-
-#section2 .nouveautes2 article figure figcaption p{
-    width: 100%;
-    text-align: center;
-    background-color: white;
-}
-
-.ingredient{
-    margin: -1px 0 0 0;
-    height: 55px;
-}
-
-#section2 .bouton-carte{
-    margin: -20px 0 80px 830px;
 }
 /* fin section 2 */
 
@@ -743,14 +775,14 @@ h4{
 
 
 /* footer */
-.footer{
-    background-color: rgb(225, 225, 225);
-    height: 175px;
+.footer1{
+    background-color: #f3f3f3;
+    height: 350px;
 }
 
 .conteneur-pied{
     display: inline-flex;
-    margin: -30px 0 0 10px;
+    margin: -30px 0 0 35px;
 }
 
 #logos{
@@ -777,26 +809,26 @@ h4{
     font-size: 20px;
 }
 
-.footer article{
+.footer1 article{
     margin: 0 70px 0 0;
     padding: 0 0 0 20px;
 }
 
-.footer #resto, .footer #RDV{
+.footer1 #resto, .footer #RDV{
     margin: -20px 70px 0 0;
 }
 
-.footer #resto a, .footer #RDV a{
+.footer1 #resto a, .footer #RDV a{
     font-size: 20px;
     line-height: 30px;
 }
 
-.footer #App p{
+.footer1 #App p{
     font-size: 20px;
     line-height: 30px;
 }
 
-.footer #App .img-logo-UE{
+.footer1 #App .img-logo-UE{
     width: 50%;
     height: auto;
 }
@@ -820,7 +852,7 @@ h4{
 }
 
 .p-app{
-    color: white;
+    color: #f3f3f3;
     margin: -10px 0 0 0;
 }
 
