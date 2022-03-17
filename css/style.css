@@ -732,80 +732,145 @@ h4{
 /* fin section 2 */
 
 /* Section 3 */
-#section3{
-    height: 1300px;
-    padding: 50px 0 0 0;
-    background: url("../img/illustration_chef.jpg") no-repeat;
-    background-size: 120%;
+@media all and (min-width:657px) and (max-width:2000px){
+
+    #section3{
+        height: 1300px;
+        padding: 50px 0 0 0;
+        background: url("../img/illustration_chef.jpg") no-repeat;
+        background-size: 120%;
+    }
+
+    #section3 .video img{
+        position: relative;
+        height: 165px;
+        width: 310px;
+        border-radius: 10%;
+        margin: 25px 0 0 150px;
+    }
+
+    #section3 .bouton-lecture img{
+        position: absolute;
+        height: 75px;
+        width: 75px;
+        display: flex;
+        top: 10%;
+        left: 14%;
+        background-color: white;
+        border-radius: 45%;
+        cursor: pointer;
+    }
+
+    #section3 article{
+        margin: 100px 0 0 150px;
+    }
+
+    #section3 article h1{
+        font-size: 80px;
+        color: white;
+    }
+
+    #section3 article h1, #section3 article p{
+        color: white;
+    }
+
+    #section3 .dessin-trait-rose {
+        margin: 0px 0px 25px 10px;
+        background-position: 0px 20%;
+    }
+
+    #section3 article p{
+        margin: 50px 0 0 10px;
+        line-height: 30px;
+    }
+
+    #section3 .photo-mobile{
+        display: none;
+    }
+
+    .photos {
+        position: absolute;
+        height: 652px;
+        width: 100%;
+        z-index: 1;
+        left: 0;
+        bottom: -326px;
+        overflow: hidden;
+    }
+
+    .photos figure {
+        display: inline-block;
+        margin: 100px 0 0 0;
+        width: 450px;
+        height: 100%;
+    }
+
+    .photos figure img {
+        width: 100%;
+        height: 90%;
+    }
+
+    .photos figure .salle-resto {
+        margin: 0 0 0 -5px;
+    }
 }
 
-#section3 .video img{
-    position: relative;
-    height: 165px;
-    width: 310px;
-    border-radius: 10%;
-    margin: 25px 0 0 150px;
-}
+@media all and (max-width:656px){
 
-#section3 .bouton-lecture img{
-    position: absolute;
-    height: 75px;
-    width: 75px;
-    display: flex;
-    top: 10%;
-    left: 14%;
-    background-color: white;
-    border-radius: 45%;
-    cursor: pointer;
-}
+    #section3{
+        margin: 0; padding: 0;
+        max-width: 565px;
+    }
 
-#section3 article{
-    margin: 100px 0 0 150px;
-}
+    #section3 .video{
+        padding: 0; margin: 0;
+    }
 
-#section3 article h1{
-    font-size: 80px;
-    color: white;
-}
+    #section3 .video img{
+        position: relative;
+        width: 100%;
+    }
 
-#section3 article h1, #section3 article p{
-    color: white;
-}
+    #section3 .bouton-lecture img{
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        top: 5%;
+        left: 42%;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 45%;
+        cursor: pointer;
+        transform: scale(1.2);
+    }
 
-#section3 .dessin-trait-rose {
-    margin: 0px 0px 25px 10px;
-    background-position: 0px 20%;
-}
+    #section3 article{
+        display: none;
+    }
 
-#section3 article p{
-    margin: 50px 0 0 10px;
-    line-height: 30px;
-}
+    #section3 .photo-mobile, #section3 .photos figure{
+        padding: 0; margin: 0;
+    }
 
-.photos {
-    position: absolute;
-    height: 652px;
-    width: 100%;
-    z-index: 1;
-    left: 0;
-    bottom: -326px;
-    overflow: hidden;
-}
+    #section3 .photo-mobile img{
+        width: 100%;
+        height: auto;
+    }
 
-.photos figure {
-    display: inline-block;
-    margin: 100px 0 0 0;
-    width: 450px;
-    height: 100%;
-}
+    #section3 .photos{
+        position: relative;
+        margin: 0 0 0 0; padding: 0;
+        width: 100%;
+    }
 
-.photos figure img {
-    width: 100%;
-    height: 90%;
-}
+    #section3 .photos img{
+        width: 100%;
+        height: auto;
+        margin: -5px 0 0 0;
+    }
 
-.photos figure .salle-resto {
-    margin: 0 0 0 -5px;
+
+
 }
 /* fin Section 3 */
 
@@ -1045,7 +1110,6 @@ h4{
 
 .bouton-google *, .bouton-apple * {
     display: inline-block;
-    /*vertical-align: middle;*/
 }
 
 .p-app{
@@ -1056,7 +1120,6 @@ h4{
 #copyright{
     margin: 75px 0 0 675px;
 }
-
 /* fin footer */
 
 
