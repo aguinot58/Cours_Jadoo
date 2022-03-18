@@ -1159,6 +1159,114 @@ header nav .nav-burger a:hover{
 
 @media all and (max-width:656px){
 
+    #section5{
+        height: 885px;
+        padding: 0;
+        background-color: white;
+    }
+
+    #section5 .titres{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #section5 .titres h4{
+        font-family: poppins-regular;
+        font-size: 18px;
+        color: rgb(94, 98, 130);
+        margin-top: 50px;
+    }
+
+    #section5 .titres h2{
+        font-family: volkhov-bold;
+        font-size: 40px;
+        color: rgb(20, 24, 62);
+        margin-top: -10px;
+    }
+
+    .formulaire-d{
+        display: none;
+    }
+
+    .formulaire-g, .champs-contact-ligne{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulaire-g h4{
+        font-family: poppins-regular;
+        font-size: 18px;
+        color: black;
+        text-align: center;
+    }
+
+    .formulaire-g h5{
+        font-family: poppins-regular;
+        font-size: 14px;
+        color: rgb(141, 141, 141);
+        line-height: 20px;
+        text-align: center;
+        margin-top: -5px;
+    }
+
+    .champs-contact input::placeholder, .champs-contact-ligne input::placeholder{
+        color: rgb(152, 152, 152, 0.5);
+        font-family: poppins-regular;
+        font-size: 13px;
+    }
+
+    .champs-contact input, .champs-contact-ligne input{
+        border: 0px;
+        border-bottom: 1px solid rgb(155, 155, 155, 0.5);
+        color: black;
+        margin: 10px 0 0 20px;
+        width: 90%;
+        outline: 0;
+        text-align: left;
+    }
+
+    .formulaire-g input:focus{
+        border-bottom-color: #007bff;
+    }
+
+    .champs-contact-ligne label, .champs-contact label{
+        font-family: poppins-regular;
+        font-size: 15px;
+        color: black;
+        margin: 25px 0 0 20px;
+        text-align: left;
+    }
+
+    .champs-contact{
+        margin-top: 25px;
+    }
+
+    .bouton-form{
+        margin: 80px 0 0 165px;
+        background-color: #007aff;
+        color : white;
+        height: 60px;
+        width: 150px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: arial;
+        font-size: 18px;
+    }
+
+    .bouton-form:hover{
+        background-color: #1485ff;
+        transform: scale(1.1);
+    }
+
+    .bouton-form img{
+        float: left;
+        margin: 5px 0 0 15px;
+    }
+
+    .bouton-form p{
+        margin: 0 0 0 0;
+    }
 
 }
 /* fin Section 5 */
