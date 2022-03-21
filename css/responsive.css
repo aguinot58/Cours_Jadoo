@@ -662,6 +662,10 @@
     /* fin header */
 
     /* section1 */
+    #section1{
+        overflow: hidden;
+    }
+
     #section1::after{
         background: url("../img/illustration_principale.jpg") no-repeat;
         background-size: cover;
@@ -674,7 +678,7 @@
         right: 0;
         bottom: 0;
         left: -4px;
-        /*transform: scale(1.5);*/
+        transform: scale(1.5);
         z-index: -1;
         overflow:hidden;
     }
@@ -721,8 +725,6 @@
         background-color: white;
         display: block;
         text-align: center;
-        background: url("../img/decor_1.svg") no-repeat #ffffff;
-        background-position: 98% 2%;
         overflow: hidden;
     }
 
@@ -962,11 +964,11 @@
 
     /* section3 */
     #section3{
-        overflow: visible;
+        overflow: hidden;
         transition: all 0.2s ease-in-out;
         position: relative;
         padding: 5%x 8% 426px 8%;
-        height: 1400px;
+        height: 1800px;
     }
 
     #section3 .video{
@@ -1000,7 +1002,7 @@
     }
 
     #section3 article h1{
-        font-size: 84px;
+        font-size: 74px;
         color: white;
         font-family: volkhov-bold;
     }
@@ -1054,8 +1056,11 @@
     }
 
     #section3::after {
+        height: 80%;
+        width: auto;
         background: url("../img/illustration_chef.jpg") no-repeat;
         background-size: cover;
+
     }
 
     #section3::after {
@@ -1065,7 +1070,7 @@
         right: 0;
         bottom: 0;
         left: -4px;
-        /*transform: translateZ(-1px) scale(1.5);*/
+        transform: scale(1.5);
         z-index: -1;
         transition: all 0.2s ease-in-out;
     }
@@ -1077,6 +1082,7 @@
         padding: 50px 0 0 0;
         background: url("../img/illustration_commander.jpg") no-repeat;
         background-size: cover;
+        margin-top: -35%;
     }
 
     #section4 .commande{
@@ -1319,6 +1325,10 @@
     /* fin Header */
 
     /* section1 */
+    #section1{
+        overflow: hidden;
+    }
+
     #section1::after{
         background: url("../img/illustration_principale.jpg") no-repeat;
         background-size: cover;
@@ -1331,7 +1341,7 @@
         right: 0;
         bottom: 0;
         left: -4px;
-        /*transform: scale(1.5);*/
+        transform: scale(1.5);
         z-index: -1;
         overflow:hidden;
     }
@@ -1617,11 +1627,11 @@
 
     /* section3 */
     #section3{
-        overflow: visible;
+        overflow: hidden;
         transition: all 0.2s ease-in-out;
         position: relative;
         padding: 5%x 8% 426px 8%;
-        height: 1400px;
+        height: 1800px;
     }
 
     #section3 .video{
@@ -1684,7 +1694,7 @@
         left: 0;
         top: 1100px;
         bottom: -326px;
-        overflow: hidden;
+        overflow: visible;
         white-space: nowrap;
     }
 
@@ -1709,6 +1719,8 @@
     }
 
     #section3::after {
+        height: 80%;
+        width: auto;
         background: url("../img/illustration_chef.jpg") no-repeat;
         background-size: cover;
     }
@@ -1720,7 +1732,7 @@
         right: 0;
         bottom: 0;
         left: -4px;
-        /*transform: translateZ(-1px) scale(1.5);*/
+        transform: scale(1.5);
         z-index: -1;
         transition: all 0.2s ease-in-out;
     }
@@ -1732,6 +1744,7 @@
         padding: 50px 0 0 0;
         background: url("../img/illustration_commander.jpg") no-repeat;
         background-size: cover;
+        margin-top: -20%;
     }
 
     #section4 .commande{
