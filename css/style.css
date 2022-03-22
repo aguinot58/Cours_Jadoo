@@ -23,7 +23,7 @@ body * {
     font-weight: bold;
 }
 
-#section1 article h3, #section4 article[class*="lien"] figcaption p[class="fgras"]{
+#section1 h3, #section4 article[class*="lien"] figcaption p[class="fgras"]{
     font-family: poppins-bold;
 }
 
@@ -48,11 +48,11 @@ body * {
     color: rgb(152, 152, 152, 0.5);
 }
 
-#section1 article h5, #section4 article[class*="lien"] figcaption p, .formulaire-g h5{
+#section1 h5, #section4 article[class*="lien"] figcaption p, .formulaire-g h5{
     font-family: poppins-regular;
 }
 
-#section1 article h1{
+#section1 h1{
     font-family: volkhov-bold;
 }
 
@@ -64,22 +64,81 @@ body * {
 /* boutons */
 .bouton-carte{
     background-color: orange;
-    height: 50px;
-    width: 175px;
+    height: 45px;
+    width: 180px;
     border: 2px solid orange;
     border-radius: 10px;
     text-align: center;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: middle;
 }
 
 .bouton-carte a{
     text-decoration: none;
     color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
 }
 
-button:hover {
+.bouton-carte:hover {
     opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.bouton-form{
+    background-color: #007aff;
+    color : white;
+    height: 60px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.bouton-form:hover{
+    background-color: #1485ff;
+    transform: scale(1.05);
+}
+
+.bouton-form img{
+    float: left;
+    margin: 5px 0 0 15px;
+}
+
+.bouton-google:hover, .bouton-apple:hover{
+    transform: scale(1.03);
+}
+
+.bouton-google, .bouton-apple{
+    background-color: #000;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    height: 35px;
+    width: 120px;
+    color: #f3f3f3;
+    font-family: Arial;
+    font-size: 10px;
+    margin: 0 0 0 0;
+    position: relative;
+}
+
+.bouton-apple{
+    margin-left: 5px;
+}
+
+.bouton-google a, .bouton-apple a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+}
+
+.bouton-google img, .bouton-apple img{
+    margin: -2px 10px 0 0;
+    position: relative;
 }
 /* fin boutons */
 
@@ -112,15 +171,16 @@ header{
     width: 70%;
 }
 
-.logo img{
-    max-height: 100%;
-}
-
-.logo img:first-child{
+.logo #img-logo-jadoo{
+    height: 35px;
     margin-right: 20px;
 }
 
-.logo img:first-child:hover{
+.logo #img-jadoo{
+    height: 35px;
+}
+
+.logo:hover img:first-child{
     animation: logo-animation 0.5s ease-in;
 }
 
@@ -176,7 +236,7 @@ header nav .nav-burger a:hover{
     height: auto;
 }
 
-#logo-site:hover{
+.logo-pied:hover img:first-child{
     animation: logo-animation 0.5s ease-in;
 }
 
@@ -184,6 +244,10 @@ header nav .nav-burger a:hover{
     height: 50px;
     width: auto;
     margin-left: 10px;
+}
+
+.logo-pied img[id="logo-site"]{
+    height: 50px;
 }
 
 #logos p{
@@ -266,36 +330,9 @@ header nav .nav-burger a:hover{
 }
 
 .footer1 #App .conteneur-app{
-    display: inline-block;
-    margin-top: 5px;
-}
-
-.footer1 #App .conteneur-app .bouton-google, .footer1 #App .conteneur-app .bouton-apple{
-    background-color: #000;
-    border: none;
-    padding: 5px 15px;
-    border-radius: 20px;
-    height: 35px;
-    width: 120px;
-}
-
-.footer1 #App .conteneur-app .bouton-google a, .footer1 #App .conteneur-app .bouton-apple a{
     display: flex;
-    flex-direction: row;
-    text-decoration: none;
-}
-
-.bouton-google img, .bouton-apple img{
-    margin: -3px 10px 0 0;
-    position: relative;
-}
-
-.footer1 #App .p-app{
-    color: #f3f3f3;
-    font-family: Arial;
-    font-size: 10px;
-    margin: -2px 0 0 0;
-    position: relative;
+    margin-top: 5px;
+    width: 250px;
 }
 
 #copyright{

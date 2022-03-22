@@ -14,9 +14,9 @@
     <body>
         <header>
             <div class="logo">
-                <img title="Jadoo, un voyage culinaire et gourmand" src="./img/logo_jadoo_1.svg" alt="Logo Jadoo" height="50px">
+                <img id="img-logo-jadoo" title="Jadoo, un voyage culinaire et gourmand" src="./img/logo_jadoo_1.svg" alt="Logo Jadoo">
                 
-                <img title="Jadoo, un voyage culinaire et gourmand" src="./img/logo_jadoo_2.svg" alt="Jadoo" height="35px">
+                <img id="img-jadoo" title="Jadoo, un voyage culinaire et gourmand" src="./img/logo_jadoo_2.svg" alt="Jadoo">
             </div>
             <nav>
                 <label for="toggle"><img class="menu-burger" src="./img/burger_icon.svg" alt="Icone menu burger"></label>
@@ -32,18 +32,16 @@
 
         <section id="section1">
 
-            <article>
-                <h3 class="saumon majuscule">Un voyage culinaire gourmet et gourmand.</h3>
-                <h1 class="dessin-trait-rose">Bienvenue
-                    <br>
-                    au restaurant
-                    <br>
-                    Jadoo</h1>
-                <h5>Jadoo vous accueille dans son ambiance zen et épurée,
-                    idéale pour découvrir ou redécouvrir la cuisine
-                    gastronomique du Chef Junichi IIDA.</h5>
-                <button class="bouton-carte"><a href="#">Découvrir la carte</a></button>
-            </article>
+            <h3 class="saumon majuscule">Un voyage culinaire gourmet et gourmand.</h3>
+            <h1 class="dessin-trait-rose">Bienvenue
+                <br>
+                au restaurant
+                <br>
+                Jadoo</h1>
+            <h5>Jadoo vous accueille dans son ambiance zen et épurée,
+                idéale pour découvrir ou redécouvrir la cuisine
+                gastronomique du Chef Junichi IIDA.</h5>
+            <div class="bouton-carte"><a href="#">Découvrir la carte</a></div>
 
         </section>
 
@@ -59,7 +57,7 @@
                     <article class="carte-plat">
                         <figure>
                             <img class="plat" title="Tsukuné" 
-                                    alt="photo d'un plat de Boulettes de poulet au gingembre sauce sucrée salée Tsukuné" src="./img/plat_1.png">
+                                    alt="plat de Boulettes de poulet au gingembre sauce sucrée salée Tsukuné" src="./img/plat_1.png">
                             <figcaption class="legende-plat">
                                 <p>Boulettes de poulet au <br>gingembre sauce sucrée salée <br>"Tsukuné"</p>
                             </figcaption>
@@ -68,7 +66,7 @@
                     <article class="carte-plat carte-plat-2">
                         <figure>
                             <img class="plat" title="Udon" 
-                                    alt="photo d'un plat de Nouilles japonaises chaudes à base de farine de blé Udon" src="./img/plat_2.png">
+                                    alt="plat de Nouilles japonaises chaudes à base de farine de blé Udon" src="./img/plat_2.png">
                             <figcaption class="legende-plat">
                                 <p>Nouilles japonaises chaudes à <br>base de farine de blé "Udon"</p>
                             </figcaption>
@@ -77,7 +75,7 @@
                     <article class="carte-plat carte-plat-2 carte-plat-3" id="plat-decor">
                         <figure>
                             <img class="plat" title="Tonkatsu-Teishoku" 
-                                    alt="photo d'un plat d'échine de porc panée à la japonaise Tonkatsu-Teishoku" src="./img/plat_3.png">
+                                    alt="plat d'échine de porc panée à la japonaise Tonkatsu-Teishoku" src="./img/plat_3.png">
                             <figcaption class="legende-plat">
                                 <p>Échine de porc panée à la <br>japonaise "Tonkatsu-Teishoku"</p>
                             </figcaption>
@@ -90,7 +88,7 @@
                 <div class="conteneur-maki">
                     <article>
                         <figure>
-                            <img class="plat2" title="California Tobiko" alt="photo d'un maki California Tobiko" src="./img/maki_1.png">
+                            <img class="plat2" title="California Tobiko" alt="maki California Tobiko" src="./img/maki_1.png">
                             <figcaption class="legende-plat2">
                                 <p class="gras">California Tobiko</p>
                                 <p class="ingredient">Saumon, thon, mayonnaise</p>
@@ -99,7 +97,7 @@
                     </article>
                     <article>
                         <figure>
-                            <img class="plat2" title="California Rolls" alt="photo d'un maki California Rolls" src="./img/maki_2.png">
+                            <img class="plat2" title="California Rolls" alt="maki California Rolls" src="./img/maki_2.png">
                             <figcaption class="legende-plat2">
                                 <p class="gras">California Rolls</p>
                                 <p class="ingredient">Saumon, avocat et mayonnaise</p>
@@ -108,7 +106,7 @@
                     </article>
                     <article>
                         <figure>
-                            <img class="plat2" title="Ebi" alt="photo d'un maki Ebi" src="./img/maki_3.png">
+                            <img class="plat2" title="Ebi" alt="maki Ebi" src="./img/maki_3.png">
                             <figcaption class="legende-plat2">
                                 <p class="gras">Ebi</p>
                                 <p class="ingredient">Crevette, avocat, menthe, coriandre</p>
@@ -117,7 +115,7 @@
                     </article>
                     <article>
                         <figure>
-                            <img class="plat2" title="Ikura Rolls" alt="photo d'un maki Ikura Rolls" src="./img/maki_4.png">
+                            <img class="plat2" title="Ikura Rolls" alt="maki Ikura Rolls" src="./img/maki_4.png">
                             <figcaption class="legende-plat2">
                                 <p class="gras">Ikura rolls</p>
                                 <p class="ingredient">Oeufs de saumon</p><br>
@@ -127,21 +125,21 @@
                 </div>
             </div>
 
-            <button class="bouton-carte"><a href="#">Découvrir la carte</a></button>
+            <div class="bouton-carte"><a href="#">Découvrir la carte</a></div>
 
         </section>
 
         <section id="section3">
 
             <div class="video">
-                <img src="./img/visu_video.jpg" alt="image de previsualition video">
+                <img src="./img/visu_video.jpg" alt="previsualition video">
                 <div class="bouton-lecture">
-                    <img  title="bouton de lecture video" src="./img/button_play.svg" alt="image de bouton de lecture video">
+                    <img  title="bouton de lecture video" src="./img/button_play.svg" alt="bouton de lecture video">
                 </div>
             </div>
 
             <article>
-                <h1 class="dessin-trait-rose">Un voyage<br>gastronomique<br>entre le Japon<br>et la France...</h1>
+                <h2 class="dessin-trait-rose">Un voyage<br>gastronomique<br>entre le Japon<br>et la France...</h2>
                 <p>Passé par des maisons étoilées en France, le cuisinier<br>
                    japonais s'est forgé une solide expérience dans<br>
                    l'Hexagone : aujourd'hui franc-comtois d'adoption, il<br>
@@ -152,13 +150,13 @@
 
             <div class="photos">
                 <figure class="photo-mobile">
-                    <img src="./img/illustration_chef.jpg" alt="image d'un chef les bras croisés">
+                    <img src="./img/illustration_chef.jpg" alt="image d'un chef cuisinier les bras croisés">
                 </figure>
                 <figure>
-                    <img src="./img/wrapper_illustration_1.jpg" alt="image d'un plat avec des baguettes posées sur un bol de sauce soja">
+                    <img src="./img/wrapper_illustration_1.jpg" alt="plat avec des baguettes posées sur un bol de sauce soja">
                 </figure>
                 <figure>
-                    <img class="salle-resto" src="./img/wrapper_illustration_2.jpg" alt="image d'un box du restaurant avec table et sièges">
+                    <img class="salle-resto" src="./img/wrapper_illustration_2.jpg" alt="salle du restaurant avec table et sièges">
                 </figure>
             </div>
 
@@ -197,7 +195,7 @@
             
             <article class="livraison lien">
                 <figure>
-                    <img src="./img/logo_transport.png" alt="logo transport">
+                    <img src="./img/logo_transport.png" alt="logo livreur en scooter">
                     <figcaption>
                         <p class="fgras">Livraison ultra rapide</p>
                         <p>Soyez livré en 20 minutes maximum</p>
@@ -205,7 +203,7 @@
                 </figure>
             </article>
 
-            <button class="bouton-carte"><a href="#">Découvrir la carte</a></button>
+            <div class="bouton-carte"><a href="#">Découvrir la carte</a></div>
 
         </section>
 
@@ -224,7 +222,7 @@
                             <h4>Formulaire de contact</h4>
                             <h5>Remplissez le formulaire ci-dessous<br>pour nous contacter</h5>
                         
-                            <form method="" action="">
+                            <form method="post">
 
                                 <div class="champs-ligne">
                                     <div class="champs-contact-ligne">
@@ -232,11 +230,11 @@
                                             en vas de clique sur le label -->
                                         <!-- l'attribue name dans l'input, sert à identier les données à transmettre à la partie php -->
                                         <label for="nom">Nom</label> 
-                                        <input type="text" placeholder="Nom" id="nom" name="nom" minlenght="2" maxlenght="25" required>
+                                        <input type="text" placeholder="Nom" id="nom" name="nom" pattern=".{2,25}" required>
                                     </div>
                                     <div class="champs-contact-ligne">
                                         <label for="prenom">Prénom</label> 
-                                        <input type="text" placeholder="Prénom" id="prenom" name="prenom" minlenght="2" maxlenght="25" required>
+                                        <input type="text" placeholder="Prénom" id="prenom" name="prenom" pattern=".{2,25}" required>
                                     </div>
                                 </div>
                                 <div class="champs-contact">
@@ -245,12 +243,12 @@
                                 </div>
                                 <div class="champs-contact">
                                     <label for="message">Message</label> 
-                                    <input type="textarea" placeholder="Votre message/demande de réservation" id="message" name="message" maxlenght="500" required>
+                                    <input type="text" placeholder="Votre message/demande de réservation" id="message" name="message" pattern=".{1,500}" required>
                                 </div>
                                 <button class="bouton-form" value="submit">
-                                    <img src="./img/bouton_formulaire_coche.svg" alt="image coche bouton formulaire">
-                                    <p>Envoyer</p>
+                                    <img src="./img/bouton_formulaire_coche.svg" alt="coche bouton formulaire">Envoyer
                                 </button>
+
                             </form>
                         </div>
 
@@ -268,9 +266,9 @@
                 <div class="conteneur-pied">
                     <article id="logos">
                         <div class="logo-pied">
-                            <img id="logo-site" title="Jadoo, un voyage culinaire et gourmand" src="./img/logo_jadoo_1.svg" alt="Logo Jadoo" height="50px">
+                            <img id="logo-site" title="Jadoo, un voyage culinaire et gourmand" src="./img/logo_jadoo_1.svg" alt="Logo Jadoo">
                             
-                            <img id="nom-site" title="Jadoo, un voyage culinaire et gourmand" src="./img/logo_jadoo_2.svg" alt="Jadoo" height="35px">
+                            <img id="nom-site" title="Jadoo, un voyage culinaire et gourmand" src="./img/logo_jadoo_2.svg" alt="Jadoo">
                         </div>
                         <p>Un voyage gastronomique entre<br>le Japon et la France</p>
                     </article>
@@ -299,12 +297,12 @@
                         <p class="moyen">Téléchargez UberEats</p>
 
                         <div class="conteneur-app">
-                            <button class="bouton-google">
-                                <a href="#"><img src="./img/logo_google_play.svg" alt="logo Google Play"><p class="p-app">Google Play</p></a>
-                            </button>
-                            <button class="bouton-apple">
-                                <a href="#"><img src="./img/logo_apple.svg" alt="logo Apple Store"><p class="p-app">Apple Store</p></a>
-                            </button>
+                            <div class="bouton-google">
+                                <a href="#"><img src="./img/logo_google_play.svg" alt="logo Google Play">Google Play</a>
+                            </div>
+                            <div class="bouton-apple">
+                                <a href="#"><img src="./img/logo_apple.svg" alt="logo Apple Store">Apple Store</a>
+                            </div>
                         </div>
 
                     </article>

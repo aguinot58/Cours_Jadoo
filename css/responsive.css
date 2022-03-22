@@ -57,13 +57,13 @@
         align-items: center;
     }
     
-    #section1 article h3{
+    #section1 h3{
         width: 95%;
         text-align: center;
         font-weight: 400;
     }
 
-    #section1 article h1{
+    #section1 h1{
         font-size: 45px;
         text-align: center;
         margin-top: 10px 0 10px 0;
@@ -71,7 +71,7 @@
         font-weight: 400;
     }
 
-    #section1 article h5{
+    #section1 h5{
         line-height: 30px;
         color:rgb(191, 192, 205);
         font-size: 16px;
@@ -402,7 +402,9 @@
     }
 
     #section4 .bouton-carte{
-        margin: 50px 0 0 0;
+        margin: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
     /* fin section4 */
 
@@ -486,28 +488,6 @@
         margin-left: auto;
         margin-right: auto;
         margin-top : 75px;
-        background-color: #007aff;
-        color : white;
-        height: 60px;
-        width: 150px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-family: arial;
-        font-size: 18px;
-    }
-
-    .bouton-form:hover{
-        background-color: #1485ff;
-        transform: scale(1.1);
-    }
-
-    .bouton-form img{
-        float: left;
-        margin: 5px 0 0 15px;
-    }
-
-    .bouton-form p{
-        margin: 0 0 0 0;
     }
     /* fin section5 */
 
@@ -570,20 +550,20 @@
         overflow:hidden;
     }
     
-    #section1 article h3{
+    #section1 h3{
         font-size: 20px;
         margin: 15px 0 30px 0;
         font-weight: 400;
     }
     
-    #section1 article h1{
+    #section1 h1{
         color: white;
         font-size: 74px;
         margin: 45px 0 25px 0;
         font-weight: 400;
     }
     
-    #section1 article h5{
+    #section1 h5{
         line-height: 30px;
         color:rgb(191, 192, 205);
         font-size: 16px;
@@ -880,14 +860,10 @@
         margin: auto;
     }
 
-    #section3 article h1{
+    #section3 article h2{
         font-size: 74px;
         color: white;
         font-family: volkhov-bold;
-    }
-
-    #section3 article h1, #section3 article p{
-        color: white;
     }
 
     #section3 .dessin-trait-rose {
@@ -900,6 +876,7 @@
         line-height: 30px;
         font-size: 16px;
         font-family: poppins-regular;
+        color: white;
     }
 
     #section3 .photos {
@@ -1128,29 +1105,8 @@
     }
 
     .bouton-form{
-        margin: 90px 0 0 125px;
-        background-color: #007aff;
-        color : white;
-        height: 60px;
-        width: 150px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-    }
-
-    .bouton-form:hover{
-        background-color: #1485ff;
-        transform: scale(1.1);
-    }
-
-    .bouton-form img{
-        float: left;
-        margin: 5px 0 0 15px;
-    }
-
-    .bouton-form p{
-        margin: 0 0 0 0;
+        margin-top: 75px;
+        margin-left: 30%;
     }
     /* fin section5 */
 
@@ -1206,20 +1162,20 @@
         overflow:hidden;
     }
     
-    #section1 article h3{
+    #section1 h3{
         font-size: 20px;
         margin: 15px 0 30px 0;
         font-weight: 400;
     }
     
-    #section1 article h1{
+    #section1 h1{
         color: white;
         font-size: 84px;
         margin: 45px 0 25px 0;
         font-weight: 400;
     }
     
-    #section1 article h5{
+    #section1 h5{
         line-height: 30px;
         color:rgb(191, 192, 205);
         font-size: 16px;
@@ -1474,6 +1430,8 @@
 
     #section2 .bouton-carte{
         margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
     /* fin section2 */
 
@@ -1516,14 +1474,10 @@
         margin: auto;
     }
 
-    #section3 article h1{
+    #section3 article h2{
         font-size: 84px;
         color: white;
         font-family: volkhov-bold;
-    }
-
-    #section3 article h1, #section3 article p{
-        color: white;
     }
 
     #section3 .dessin-trait-rose {
@@ -1536,6 +1490,7 @@
         line-height: 30px;
         font-size: 16px;
         font-family: poppins-regular;
+        color: white;
     }
 
     #section3 .photos {
@@ -1652,8 +1607,8 @@
 
     /* section5 */
     #section5{
-        height: 975px;
-        padding: 50px 0 0 0;
+        height: 1100px;
+        padding: 5% 8% 5% 8%;
         background-color: rgb(250,250,250);
     }
 
@@ -1667,7 +1622,7 @@
 
     #section5 .titres h4{
         font-size: 18px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     #section5 .titres h2{
@@ -1694,7 +1649,7 @@
     .formulaire-d {
         display: table-cell;
         width: 50%;
-        height: 100%;
+        height: auto;
         vertical-align: top;
     }
 
@@ -1764,29 +1719,8 @@
     }
 
     .bouton-form{
-        margin: 90px 0 0 125px;
-        background-color: #007aff;
-        color : white;
-        height: 60px;
-        width: 150px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-    }
-
-    .bouton-form:hover{
-        background-color: #1485ff;
-        transform: scale(1.1);
-    }
-
-    .bouton-form img{
-        float: left;
-        margin: 5px 0 0 15px;
-    }
-
-    .bouton-form p{
-        margin: 0 0 0 0;
+        margin: 90px;
+        margin-left: 30%;
     }
     /* fin section5 */
 
