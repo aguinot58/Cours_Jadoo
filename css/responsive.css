@@ -31,6 +31,10 @@
         padding: 8% 5% 8% 5%;
         width: 100%;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #section1::after{
@@ -48,13 +52,6 @@
         transform: translateZ(-1px) scale(1.5);
         z-index: -1;
         transition: all 0.2s ease-in-out;
-    }
-
-    #section1 article{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     
     #section1 h3{
@@ -410,10 +407,11 @@
 
     /* section5 */
     #section5{
-        height: 885px;
+        height: 850px;
         padding: 0;
         background-color: white;
         text-align: center;
+        margin-top: -30px;
     }
 
     #section5 .titres{
@@ -463,19 +461,15 @@
         border: 0px;
         border-bottom: 1px solid rgb(155, 155, 155, 0.5);
         color: black;
-        margin: 10px 0 0 25px;
+        margin: 10px 35px 0 35px;
         width: 90%;
         outline: 0;
         text-align: left;
     }
 
-    .formulaire-g input:focus{
-        border-bottom-color: #007bff;
-    }
-
     .champs-contact-ligne label, .champs-contact label{
         font-size: 15px;
-        margin: 25px 0 0 25px;
+        margin: 25px 0 0 35px;
         text-align: left;
     }
 
@@ -977,7 +971,6 @@
 
     #section4 article p{
         margin: 5px 0 0 100px;
-        font-family: poppins-regular;
         font-size: 16px;
         width: 290px;
     }
@@ -1098,10 +1091,6 @@
 
     .champs-contact input::placeholder, .champs-contact-ligne input::placeholder{
         font-size: 13px;
-    }
-
-    .formulaire-g input:focus{
-        border-bottom-color: #007bff;
     }
 
     .bouton-form{
@@ -1590,7 +1579,6 @@
 
     #section4 article p{
         margin: 5px 0 0 100px;
-        font-family: poppins-regular;
         font-size: 16px;
         width: 290px;
     }
@@ -1712,10 +1700,6 @@
 
     .champs-contact input::placeholder, .champs-contact-ligne input::placeholder{
         font-size: 13px;
-    }
-
-    .formulaire-g input:focus{
-        border-bottom-color: #007bff;
     }
 
     .bouton-form{
