@@ -58,23 +58,22 @@
     }
     
     #section1 article h3{
-        font-family: poppins-bold;
         width: 95%;
         text-align: center;
+        font-weight: 400;
     }
 
     #section1 article h1{
         font-size: 45px;
         text-align: center;
         margin-top: 10px 0 10px 0;
-        font-family: volkhov-bold;
         color: white;
+        font-weight: 400;
     }
 
     #section1 article h5{
         line-height: 30px;
         color:rgb(191, 192, 205);
-        font-family: poppins-regular;
         font-size: 16px;
         text-align: center;
         margin-top: 0px;
@@ -123,15 +122,11 @@
         padding: 0;
         margin: auto;
         font-size: 18px;
-        font-family: poppins-regular;
-        color: rgb(94, 98, 130);
     }
 
     #section2 .titres h2{
         padding: 0;
         font-size: 40px;
-        font-family: volkhov-bold;
-        color: rgb(20, 24, 62);
         width: 475px;
         margin-left: auto;
         margin-right: auto;
@@ -172,10 +167,8 @@
     #section2 .nouveautes article figure figcaption p{
         text-align: center;
         padding: 15px 0 0 0;
-        font-family: poppins-regular;
         font-size: 18px;
         line-height: 25px;
-        color: rgb(94, 98, 130);
     }
 
     #section2 .nouveautes figure{
@@ -222,92 +215,6 @@
         animation: animation-carte-3 19.5s 0s infinite;
     }
 
-    @keyframes animation-carte-1 {
-        0% {
-            opacity: 0;
-            transform: translateX(50%);
-        }
-
-        2.25% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        33% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        35.25% {
-            opacity: 0;
-            transform: translateX(-50%);
-        }
-
-        100% {
-            opacity: 0;
-            transform: translateX(-50%);
-        }
-    }
-
-    @keyframes animation-carte-2 {
-        0% {
-            opacity: 0;
-            transform: translateX(50%);
-        }
-
-        35.25% {
-            opacity: 0;
-            transform: translateX(50%);
-        }
-
-        37.5% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        66% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        68.25% {
-            opacity: 0;
-            transform: translateX(-50%);
-        }
-
-        100% {
-            opacity: 0;
-            transform: translateX(-50%);
-        }
-    }
-
-    @keyframes animation-carte-3 {
-        0% {
-            opacity: 0;
-            transform: translateX(50%);
-        }
-
-        68.25% {
-            opacity: 0;
-            transform: translateX(50%);
-        }
-
-        70.5% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        97.75% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        100% {
-            opacity: 0;
-            transform: translateX(-50%);
-        }
-    }
-
     #section2 .nouveautes2{
         width: 100%;
         margin: 0 0 50px 0;
@@ -336,14 +243,11 @@
 
     #section2 .nouveautes2 article figure figcaption p[class="ingredient"]{
         font-size: 16px;
-        font-family: poppins-regular;
         line-height: 28px;
-        color: rgb(94, 98, 130);
     }
 
     #section2 .nouveautes2 article figure figcaption p[class="gras"]{
         font-size: 18px;
-        font-family: opensans-regular;
         line-height: 28px;
         color: rgb(30, 29, 76);
         text-align: left;
@@ -438,16 +342,12 @@
     }
 
     #section4 .commande h4{
-        font-family: poppins-regular;
         font-size: 18px;
-        color: rgb(94, 98, 130);
     }
 
     #section4 .commande h2{
         margin: -10px 0 0 0;
         font-size: 40px;
-        font-family: volkhov-bold;
-        color: rgb(20, 24, 62);
         width: 100%;
     }
 
@@ -492,13 +392,11 @@
     }
 
     #section4 article[class*="lien"] figcaption p{
-        font-family: poppins-regular;
         font-size: 14px;
         width: 350px;
     }
 
     #section4 article[class*="lien"] figcaption p[class="fgras"]{
-        font-family: poppins-bold;
         font-size: 14px;
         width: 350px;
     }
@@ -523,16 +421,12 @@
     }
 
     #section5 .titres h4{
-        font-family: poppins-regular;
         font-size: 18px;
-        color: rgb(94, 98, 130);
         margin-top: 50px;
     }
 
     #section5 .titres h2{
-        font-family: volkhov-bold;
         font-size: 40px;
-        color: rgb(20, 24, 62);
         margin-top: -10px;
     }
 
@@ -546,14 +440,11 @@
     }
 
     .formulaire-g h4{
-        font-family: poppins-regular;
         font-size: 18px;
-        color: black;
         text-align: center;
     }
 
     .formulaire-g h5{
-        font-family: poppins-regular;
         font-size: 14px;
         color: rgb(141, 141, 141);
         line-height: 20px;
@@ -562,8 +453,6 @@
     }
 
     .champs-contact input::placeholder, .champs-contact-ligne input::placeholder{
-        color: rgb(152, 152, 152, 0.5);
-        font-family: poppins-regular;
         font-size: 13px;
         text-align: left;
     }
@@ -583,9 +472,7 @@
     }
 
     .champs-contact-ligne label, .champs-contact label{
-        font-family: poppins-regular;
         font-size: 15px;
-        color: black;
         margin: 25px 0 0 25px;
         text-align: left;
     }
@@ -684,22 +571,21 @@
     }
     
     #section1 article h3{
-        font-family: poppins-bold;
         font-size: 20px;
         margin: 15px 0 30px 0;
+        font-weight: 400;
     }
     
     #section1 article h1{
         color: white;
-        font-family: volkhov-bold;
         font-size: 74px;
         margin: 45px 0 25px 0;
+        font-weight: 400;
     }
     
     #section1 article h5{
         line-height: 30px;
         color:rgb(191, 192, 205);
-        font-family: poppins-regular;
         font-size: 16px;
         width: 475px;
         margin: 35px 0 0 0;
@@ -735,14 +621,10 @@
     #section2 .titres h4{
         text-align: center;
         font-size: 18px;
-        font-family: poppins-regular;
-        color: rgb(94, 98, 130);
     }
 
     #section2 .titres h2{
         text-align: center;
-        font-family: volkhov-bold;
-        color: rgb(20, 24, 62);
         font-size: 50px;
         margin-top: -10px;
     }
@@ -805,9 +687,7 @@
     #section2 .nouveautes article figure figcaption p{
         text-align: center;
         padding: 15px 0 0 0;
-        font-family: poppins-regular;
         font-size: 18px;
-        color: rgb(94, 98, 130);
     }
 
     #section2 .nouveautes #plat-decor::before{
@@ -896,7 +776,6 @@
     }
 
     #section2 .nouveautes2 article figure figcaption p[class="gras"]{
-        font-family: opensans-regular;
         font-size: 20px;
         line-height: 20px;
         width: 110%;
@@ -1091,16 +970,12 @@
 
     #section4 .commande h4{
         font-size: 18px;
-        font-family: poppins-regular;
-        color: rgb(94, 98, 130);
     }
 
     #section4 .commande h2{
         margin: -10px 0 0 0;
         width: 410px;
-        font-family: volkhov-bold;
         font-size: 50px;
-        color: rgb(20, 24, 62);
     }
 
     #section4 article{
@@ -1121,10 +996,6 @@
         float: left;
         height: 65px;
         width: 65px;
-    }
-
-    #section4 article p[class="fgras"]{
-        font-family: poppins-bold;
     }
 
     #section4 article p{
@@ -1160,16 +1031,12 @@
     }
 
     #section5 .titres h4{
-        font-family: poppins-regular;
         font-size: 18px;
-        color: rgb(94, 98, 130);
         margin-top: 50px;
     }
 
     #section5 .titres h2{
-        font-family: volkhov-bold;
         font-size: 50px;
-        color: rgb(20, 24, 62);
         margin-top: -20px;
     }
 
@@ -1204,13 +1071,10 @@
     }
 
     .formulaire-g h4{
-        font-family: poppins-regular;
         font-size: 18px;
-        color: black;
     }
 
     .formulaire-g h5{
-        font-family: poppins-regular;
         font-size: 14px;
         color: rgb(141, 141, 141);
     }
@@ -1242,9 +1106,7 @@
     }
 
     .champs-contact label, .champs-contact-ligne label{
-        font-family: poppins-regular;
         font-size: 15px;
-        color: black;
     }
 
     .champs-contact input, .champs-contact-ligne input{
@@ -1258,8 +1120,6 @@
     }
 
     .champs-contact input::placeholder, .champs-contact-ligne input::placeholder{
-        color: rgb(152, 152, 152, 0.5);
-        font-family: poppins-regular;
         font-size: 13px;
     }
 
@@ -1347,22 +1207,21 @@
     }
     
     #section1 article h3{
-        font-family: poppins-bold;
         font-size: 20px;
         margin: 15px 0 30px 0;
+        font-weight: 400;
     }
     
     #section1 article h1{
         color: white;
-        font-family: volkhov-bold;
         font-size: 84px;
         margin: 45px 0 25px 0;
+        font-weight: 400;
     }
     
     #section1 article h5{
         line-height: 30px;
         color:rgb(191, 192, 205);
-        font-family: poppins-regular;
         font-size: 16px;
         width: 475px;
         margin: 35px 0 0 0;
@@ -1401,14 +1260,10 @@
     #section2 .titres h4{
         text-align: center;
         font-size: 18px;
-        font-family: poppins-regular;
-        color: rgb(94, 98, 130);
     }
 
     #section2 .titres h2{
         text-align: center;
-        font-family: volkhov-bold;
-        color: rgb(20, 24, 62);
         font-size: 50px;
         margin-top: -10px;
     }
@@ -1471,9 +1326,7 @@
     #section2 .nouveautes article figure figcaption p{
         text-align: center;
         padding: 15px 0 0 0;
-        font-family: poppins-regular;
         font-size: 18px;
-        color: rgb(94, 98, 130);
     }
 
     #section2 .nouveautes #plat-decor::before{
@@ -1559,7 +1412,6 @@
     }
 
     #section2 .nouveautes2 article figure figcaption p[class="gras"]{
-        font-family: opensans-regular;
         font-size: 20px;
         line-height: 20px;
         width: 175px;
@@ -1753,16 +1605,12 @@
 
     #section4 .commande h4{
         font-size: 18px;
-        font-family: poppins-regular;
-        color: rgb(94, 98, 130);
     }
 
     #section4 .commande h2{
         margin: -10px 0 0 0;
         width: 410px;
-        font-family: volkhov-bold;
         font-size: 50px;
-        color: rgb(20, 24, 62);
     }
 
     #section4 article{
@@ -1783,10 +1631,6 @@
         float: left;
         height: 65px;
         width: 65px;
-    }
-
-    #section4 article p[class="fgras"]{
-        font-family: poppins-bold;
     }
 
     #section4 article p{
@@ -1822,16 +1666,12 @@
     }
 
     #section5 .titres h4{
-        font-family: poppins-regular;
         font-size: 18px;
-        color: rgb(94, 98, 130);
         margin-top: 50px;
     }
 
     #section5 .titres h2{
-        font-family: volkhov-bold;
         font-size: 50px;
-        color: rgb(20, 24, 62);
         margin-top: -20px;
     }
 
@@ -1866,13 +1706,10 @@
     }
 
     .formulaire-g h4{
-        font-family: poppins-regular;
         font-size: 18px;
-        color: black;
     }
 
     .formulaire-g h5{
-        font-family: poppins-regular;
         font-size: 14px;
         color: rgb(141, 141, 141);
         font-weight: 500;
@@ -1905,9 +1742,7 @@
     }
 
     .champs-contact label, .champs-contact-ligne label{
-        font-family: poppins-regular;
         font-size: 15px;
-        color: black;
     }
 
     .champs-contact input, .champs-contact-ligne input{
@@ -1921,8 +1756,6 @@
     }
 
     .champs-contact input::placeholder, .champs-contact-ligne input::placeholder{
-        color: rgb(152, 152, 152, 0.5);
-        font-family: poppins-regular;
         font-size: 13px;
     }
 
@@ -1957,8 +1790,17 @@
     }
     /* fin section5 */
 
-}
+    /* footer */
+    .footer1 #App .img-logo-UE{
+        margin-left: -85px;
+    }
 
+    .footer1 #App p{
+        text-align: left;
+    }
+    /* fin footer */
+
+}
 
 /* specifique section2 3 plats */
 @media all and (min-width:1143px) {

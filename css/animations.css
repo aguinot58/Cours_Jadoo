@@ -1,0 +1,113 @@
+/* animation logo Jadoo header et footer */
+@keyframes logo-animation {
+    20% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+/* animation logo Jadoo header et footer */
+
+
+/* animations slider auto nouveaux plats section2 pour version mobile */
+@keyframes animation-carte-1 {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    2.25% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    35.25% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes animation-carte-2 {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    35.25% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    37.5% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    66% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    68.25% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes animation-carte-3 {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    68.25% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    70.5% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    97.75% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+/*  fin animations slider auto nouveaux plats section2 pour version mobile */
+

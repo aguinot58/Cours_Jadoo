@@ -10,7 +10,7 @@ body * {
 }
 /* fin initialisation page */
 
-/* divers */
+/* fonts */
 .saumon{
     color: #df6951;
 }
@@ -22,7 +22,44 @@ body * {
 .gras{
     font-weight: bold;
 }
-/* fin divers */
+
+#section1 article h3, #section4 article[class*="lien"] figcaption p[class="fgras"]{
+    font-family: poppins-bold;
+}
+
+#section2 .titres h4, #section2 .nouveautes article figure figcaption p,
+#section2 .nouveautes2 article figure figcaption p[class="ingredient"], #section4 .commande h4, #section5 .titres h4{
+    font-family: poppins-regular;
+    color: rgb(94, 98, 130);
+}
+
+#section2 .titres h2, #section4 .commande h4, #section5 .titres h2{
+    font-family: volkhov-bold;
+    color: rgb(20, 24, 62);
+}
+
+.formulaire-g h4, .champs-contact label, .champs-contact-ligne label{
+    font-family: poppins-regular;
+    color: black;
+}
+
+.champs-contact input::placeholder, .champs-contact-ligne input::placeholder{
+    font-family: poppins-regular;
+    color: rgb(152, 152, 152, 0.5);
+}
+
+#section1 article h5, #section4 article[class*="lien"] figcaption p, .formulaire-g h5{
+    font-family: poppins-regular;
+}
+
+#section1 article h1{
+    font-family: volkhov-bold;
+}
+
+#section2 .nouveautes article figure figcaption p[class="gras"]{
+    font-family: opensans-regular;
+}
+/* fin fonts */
 
 /* boutons */
 .bouton-carte{
@@ -85,28 +122,6 @@ header{
 
 .logo img:first-child:hover{
     animation: logo-animation 0.5s ease-in;
-}
-
-@keyframes logo-animation {
-    20% {
-        transform: rotate(15deg);
-    }
-
-    40% {
-        transform: rotate(-10deg);
-    }
-
-    60% {
-        transform: rotate(5deg);
-    }
-
-    80% {
-        transform: rotate(-5deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
 }
 
 header nav{
