@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/responsive.css">
         <link rel="stylesheet" href="./css/animations.css">
+        <script src="./js/script.js"></script>
         <link rel="icon" href="./img/favicon.ico">
         <title>Jadoo : un voyage culinaire et gourmand</title>
     </head>
@@ -22,10 +23,10 @@
                 <label for="toggle"><img class="menu-burger" src="./img/burger_icon.svg" alt="Icone menu burger"></label>
                 <input type="checkbox" id="toggle">
                 <div class="nav-burger">
-                    <a href="#">Les nouveautés</a>
-                    <a href="#">Découvrir</a>
-                    <a href="#">Commander</a>
-                    <a href="#">Contactez-nous</a>
+                    <a href="#section2">Les nouveautés</a>
+                    <a href="#section3">Découvrir</a>
+                    <a href="#section4">Commander</a>
+                    <a href="#section5">Contactez-nous</a>
                 </div>
             </nav>
         </header>
@@ -222,30 +223,35 @@
                             <h4>Formulaire de contact</h4>
                             <h5>Remplissez le formulaire ci-dessous<br>pour nous contacter</h5>
                         
-                            <form method="post">
+                            <form method="post" id="formulaire-contact" onsubmit="return valider()"> 
 
                                 <div class="champs-ligne">
                                     <div class="champs-contact-ligne">
                                         <!-- le for dans le label permet de placer la souris de l'utilisateur directement dans l'input dont l'id correspond 
                                             en vas de clique sur le label -->
                                         <!-- l'attribue name dans l'input, sert à identier les données à transmettre à la partie php -->
-                                        <label for="nom">Nom</label> 
-                                        <input type="text" placeholder="Nom" id="nom" name="nom" pattern=".{2,25}" required>
+                                        <label for="nom">Nom <span class="rouge">*</span></label> 
+                                        <!-- <input type="text" placeholder="Nom" id="nom" name="nom" pattern=".{2,25}" required> -->
+                                        <input  placeholder="Nom" id="nom" name="nomF" type="text" onkeyup="this.value = this.value.toLocaleUpperCase();">
                                     </div>
                                     <div class="champs-contact-ligne">
-                                        <label for="prenom">Prénom</label> 
-                                        <input type="text" placeholder="Prénom" id="prenom" name="prenom" pattern=".{2,25}" required>
+                                        <label for="prenom">Prénom <span class="rouge">*</span></label> 
+                                        <!-- <input type="text" placeholder="Prénom" id="prenom" name="prenom" pattern=".{2,25}" required> -->
+                                        <input type="text" placeholder="Prénom" id="prenom" name="prenom" onkeyup="this.value = this.value.toLocaleUpperCase();">
                                     </div>
                                 </div>
                                 <div class="champs-contact">
-                                    <label for="mail">Adresse e-mail</label>
-                                    <input type="email" placeholder="monAdresseMail@gmail.com" id="mail" name="mail" required> 
+                                    <label for="mail">Adresse e-mail <span class="rouge">*</span></label>
+                                    <!-- <input type="email" placeholder="monAdresseMail@gmail.com" id="mail" name="mail" required> -->
+                                    <input type="email" placeholder="monAdresseMail@gmail.com" id="mail" name="mail">
                                 </div>
                                 <div class="champs-contact">
-                                    <label for="message">Message</label> 
-                                    <input type="text" placeholder="Votre message/demande de réservation" id="message" name="message" pattern=".{1,500}" required>
+                                    <label for="message">Message <span class="rouge">*</span></label> 
+                                    <!-- <input type="text" placeholder="Votre message/demande de réservation" id="message" name="message" pattern=".{1,500}" required> -->
+                                    <input type="text" placeholder="Votre message/demande de réservation" id="message" name="message" pattern=".{1,500}">
                                 </div>
-                                <button class="bouton-form" value="submit">
+                                <div class="msg-obligatoire">(<span class="rouge">*</span> champs obligatoires)</div>
+                                <button class="bouton-form" value="submit" id="btn-form">
                                     <img src="./img/bouton_formulaire_coche.svg" alt="coche bouton formulaire">Envoyer
                                 </button>
 

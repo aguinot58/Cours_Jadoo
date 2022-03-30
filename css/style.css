@@ -23,6 +23,15 @@ body * {
     font-weight: bold;
 }
 
+.rouge{
+    color: red;
+}
+
+.msg-obligatoire{
+    font-style: italic;
+    margin-top: 15px;
+}
+
 #section1 h3, #section4 article[class*="lien"] figcaption p[class="fgras"]{
     font-family: poppins-bold;
 }
